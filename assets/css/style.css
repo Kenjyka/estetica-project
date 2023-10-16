@@ -21,19 +21,19 @@ body {
 }
 
 main{
-    height: 60%;
-    margin: 4em 1em;
-
+    height: 60%;    
 }
 
 .container{
-    height: 100% ;
+    height: fit-content ;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
     background-color: var(--light);
     flex-wrap: wrap;
+    border: 50px black solid;
+    background-color: #704F2F;
 }
 
 .git-user{
@@ -42,13 +42,17 @@ main{
     justify-content: center;
     align-items: center;
     gap: 1em;
-    border: 1px solid white;
-    border-radius: 5px;
     overflow: hidden;
-    background-color: var(--medium);
+    &:hover > .div-botton {
+        transform: rotate(30deg);
+    }
 }
 .div-botton{
     padding: 1em;
+    cursor: pointer;
+    transition: transform 1s;
+
+   
 }
 
 .div-information{
@@ -56,6 +60,7 @@ main{
     padding: 1em;
     display:flex;
     flex-direction: column;
+    display: none;
 }
 
 #user-name{
