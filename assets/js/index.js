@@ -10,4 +10,6 @@ users.forEach(async (users, indice)=>{
     let card = await criarCard(user)
     
     container.innerHTML += card
-})
+
+    console.log(card)
+})  
