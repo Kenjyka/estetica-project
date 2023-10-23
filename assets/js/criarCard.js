@@ -8,13 +8,17 @@ return`
             </div>
         </div>
         <div class="div-information">
+            <div class="container-botton">
+                <img src="${user.image}" alt="${user.name}" class="botton-image" id="user-image">
+                <div class="botton"></div>
+            </div>
             <h2 id="user-name">${user.name}</h2>
             <div class="redes">
-                <a href="${user.github}" target="_blank" id="github">
-                    <img src="./assets/img/icons8-github-100.png" alt="teste">
+                <a href="${user.github}" target="_blank" class="github">
+                    <i class="bi bi-github"></i>
                 </a>
-                <a href="${user.project}" target="_blank" id="projeto">
-                    <img src="./assets/img/icons8-barbearia-80.png" alt="teste">
+                <a href="${user.project}" target="_blank" class="projeto">
+                    <i class="bi bi-window"></i>
                 </a>
             </div>
         </div>
